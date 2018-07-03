@@ -17,8 +17,10 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
-    font-family: 'Coda', cursive;
+    background: #ffffff url('../img/star-wars-galaxy-background.jpg'); /* Galaxy background */
+    font-family: 'Libre Franklin', sans-serif;
+      color: white;
+
 }
 
 .container {
@@ -29,8 +31,15 @@ body {
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+  font-family: 'Libre Franklin', sans-serif;
+    font-weight:bold;
+    color: #cc9933;
+    text-align: center;
+}
+
+h2 {
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
 }
 
 /*
@@ -40,7 +49,7 @@ h1 {
 .deck {
     width: 660px;
     min-height: 680px;
-    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    background:rgba(226, 226, 225, 0.4) ;
     padding: 32px;
     border-radius: 10px;
     box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
@@ -67,7 +76,7 @@ h1 {
 
 .deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
+    background:rgba(255, 255, 255, 0.5);
     cursor: default;
 }
 
@@ -77,9 +86,21 @@ h1 {
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
+    box-shadow: 0px 2px 44px 16px rgba(41, 37, 191, 0.5);
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    transition: all 0.2s ease;
     font-size: 33px;
 }
+
+.no-match {
+  box-shadow: 0px 2px 44px 16px rgba(153, 0, 0, .6)!important;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  transition: all 0.2s ease;
+}
+
+
 
 /*
  * Styles for the Score Panel
@@ -106,4 +127,65 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+}
+
+/* Style for Modal */
+.modal-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(46, 61, 73, 0.5);
+}
+
+.hide {
+  display: none;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1.5vw;
+  border-bottom: 1px solid #2e3d49;
+}
+
+.modal-close {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.modal-box {
+  position: relative;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background: #e2e2e1;
+  border-radius: 8px;
+  box-shadow: 5px 2px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.modal-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align:center;
+  padding: 1vw;
+  border-bottom: 1px solid #2e3d49;
+  font-weight: bold;
+  color: #cc9933;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-around;
+  padding: 1vw;
+}
+
+.modal-button {
+  width: 62px;
+  height: 62px;
+  border-radius: 8px;
 }
