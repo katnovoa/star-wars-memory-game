@@ -82,7 +82,7 @@ let runTime = false;
 const clock = '<i class="fa fa-clock-o"></i>';
 
 //modal
-const modal = document.querySelector('.modal-back');
+const modal = document.querySelector('.win-modal-back');
 const totalPairs = 16;
 
 

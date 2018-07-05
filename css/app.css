@@ -19,7 +19,7 @@ body {
 body {
     background: #ffffff url('../img/star-wars-galaxy-background.jpg'); /* Galaxy background */
     font-family: 'Libre Franklin', sans-serif;
-      color: white;
+      color: #cc9933;
 
 }
 
@@ -109,7 +109,6 @@ h2 {
   animation-iteration-count: infinite;
   transition: all 0.2s ease;
 }
-
 
 
 /*
