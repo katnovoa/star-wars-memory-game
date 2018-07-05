@@ -23,6 +23,8 @@ body {
 
 }
 
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -30,15 +32,14 @@ body {
     flex-direction: column;
 }
 
-h1 {
-  font-family: 'Libre Franklin', sans-serif;
-    font-weight:bold;
-    color: #cc9933;
-    text-align: center;
+header {
+  margin-top: 30px;
 }
 
 h2 {
   font-family: 'Libre Franklin', sans-serif;
+  font-weight:bold;
+  color: #cc9933;
   text-align: center;
 }
 
