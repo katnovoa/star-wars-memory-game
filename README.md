@@ -2,7 +2,7 @@
 
 ## What is the Star Wars Memory Game
 This is a game build to test a users memory using  deck of  16 cards with different icons.
-As a passionate Star Wars fan, I wanted to pay a little tribute by making the cards glow like lightsabers, red for no match and blue when cards match. 
+As a passionate Star Wars fan, I wanted to pay a little tribute by making the cards glow like lightsabers, red for no match and blue when cards match.
 
 ## Challenge
 The object of the game is to match each pair of cards in less moves and less time
@@ -24,3 +24,6 @@ The object of the game is to match each pair of cards in less moves and less tim
 * CSS
 * Javascript
 * Star Wars glyphicons
+
+## Big Thanks
+ Star Wars glyphicons. Udacity Slack Channel - Provided the Udacity Memory game diingo outline, @elharony and his youtube video, the memory game google spreadsheet found on slack, the project planning tutorial by Pascal Meers, stackflow, w3schools, and @yadivaladez 
