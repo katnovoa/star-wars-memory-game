@@ -250,9 +250,11 @@ function reset() {
   shuffle(allCards);
   deal();
   matchedCards = [];
+  openCards = [];
   moves = 0;
   movesNumber.innerHTML = 0;
   stars.innerHTML = `<li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li><li><i class="fa fa-star"></i></li>`;
 }
 
+//start game
 deal();
