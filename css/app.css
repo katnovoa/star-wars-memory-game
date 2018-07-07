@@ -18,8 +18,8 @@ body {
 
 body {
     background: #ffffff url('../img/star-wars-galaxy-background.jpg'); /* Galaxy background */
-    font-family: 'Libre Franklin', sans-serif;
-      color: #cc9933;
+    font-family: 'Libre Franklin', sans-serif, bold;
+    color: #cc9933;
 
 }
 
@@ -140,7 +140,7 @@ h2 {
 
 /* Style for Modal */
 .win-modal-back {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
